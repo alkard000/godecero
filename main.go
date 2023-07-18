@@ -1,13 +1,16 @@
 package main
 
 import (
-	"godecero/variables"
-	"fmt"
+	"godecero/ejercicios"
 )
 
 func main() {
-	estado, text := variables.ConviertoTexto(1234)
+	/*number, text := ejercicios.TwoValues("1234")
 
-	fmt.Println(estado)
-	fmt.Println(text)
+	fmt.Println(number)
+	fmt.Println(text)*/
+
+	/*teclado.IngresoNumeros()*/
+
+	ejercicios.InputData()
 }
