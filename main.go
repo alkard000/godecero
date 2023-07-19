@@ -1,7 +1,7 @@
 package main
 
 import (
-	"godecero/ejercicios"
+	"godecero/middleware"
 )
 
 func main() {
@@ -12,5 +12,13 @@ func main() {
 
 	/*teclado.IngresoNumeros()*/
 
-	ejercicios.InputData()
+	/*files.SumaTabla()*/
+	/*canalST := make(chan bool)
+	go goroutines.MiNombreLento("Ivan", canalST)
+	defer func() {
+		<-canalST
+	}()
+	fmt.Println("Estoy aca")*/
+
+	middleware.MiMiddleware()
 }

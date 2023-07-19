@@ -9,8 +9,9 @@ import (
 
 var numero1 int
 var err error
+var texto string
 
-func InputData() {
+func InputData() string {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	for {
@@ -26,6 +27,9 @@ func InputData() {
 	}
 
 	for	i := 0; i <= 10; i++ {
-		fmt.Println(i*numero1)
+		texto += fmt.Sprintf("%d x %d = %d \n", numero1, i, numero1*i)
 	}
+
+	fmt.Println(texto)
+	return texto
 }
